@@ -1,0 +1,352 @@
+/* Font-face */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.eot');
+    src: url('../fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+    url('../fonts/Montserrat-Medium.woff') format('woff'),
+    url('../fonts/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.eot');
+    src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('../fonts/Montserrat-Regular.woff') format('woff'),
+    url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* / Font-face */
+
+/* Common styles */
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    background-color: #E5E5E5;
+}
+
+.button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #533738;
+    background-color: #CC8B86;
+}
+
+.h2 {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+
+    color: #533738;
+}
+
+/* / Common styles */
+
+/* Header */
+.logo {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #533738;
+}
+
+.header-nav-list-item__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #533738;
+}
+
+.header-tel {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #533738;
+}
+
+/* / Header */
+
+/* Promo */
+.promo-h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+
+    color: #533738;
+}
+
+.promo-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #533738;
+}
+
+/* / Promo */
+
+/* About Us */
+.about-us-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #533738;
+}
+
+.about-us-achievements {
+    background-color: #8D7370;
+}
+
+.about-us-achievements-list-item {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+
+    color: #FFF;
+}
+
+.about-us-achievements-list-item-bigger-text {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+}
+
+/* / About Us */
+
+/* Portfolio */
+.portfolio-list-item-name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    color: #FFF;
+}
+
+.portfolio-list-item-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #FFF;
+}
+
+.portfolio-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+
+    color: #533738;
+}
+
+.portfolio-link::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 37px;
+
+    background: url("../images/arrow.svg") no-repeat center;
+}
+
+/* / Portfolio */
+
+/* Team */
+.team {
+    background-color: #E2C4BA;
+}
+
+.team-members-list-item-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #533738;
+}
+
+/* / Team */
+
+/* How we work */
+.how-we-work {
+    background-color: #E2C4BA;
+}
+
+.how-we-work-list-item-number {
+    width: 70px;
+    height: 70px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+
+    background-color: #8D7370;
+    color: #FFF;
+
+    border-radius: 50%;
+}
+
+.how-we-work-list-item-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #533738;
+}
+
+/* / How we work */
+
+/* Feedback */
+.feedback-slider-button {
+    width: 72px;
+    height: 72px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #CC8B86;
+    background-image: url("../images/arrow-feedback-slider.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.feedback-slider-right-button {
+    transform: rotate(180deg);
+}
+
+.feedback-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #533738;
+}
+
+.feedback-author {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #533738;
+}
+
+/* / Feedback */
+
+/* Leave request */
+.leave-request {
+    background-color: #8D7370;
+}
+
+.leave-request-h2 {
+    color: #FFF;
+}
+
+.leave-request-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #FFF;
+}
+
+.leave-request-input {
+    border: none;
+    border-bottom: 1px solid #FFF;
+
+    background-color: transparent;
+    color: #F6EDE9;
+}
+
+.leave-request-input::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #F6EDE9;
+}
+
+.leave-request-input:focus {
+    outline: none;
+}
+
+.leave-request-send-button {
+    border: none;
+}
+
+/* / Leave request */
+
+/* Footer */
+.footer-contact-tel {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #533738;
+}
+
+.footer-contact-address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #533738;
+}
+
+.footer-name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #533738;
+}
+
+/* / Footer */
