@@ -570,11 +570,22 @@ body {
     background-color: #8D7370;
 }
 
+.leave-request-container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
 .leave-request-h2 {
+    margin-top: 50px;
+    margin-bottom: 24px;
+
     color: #FFF;
 }
 
 .leave-request-description {
+    margin-bottom: 44px;
+
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -583,12 +594,31 @@ body {
     color: #FFF;
 }
 
+.leave-request-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .leave-request-input {
+    height: 35px;
+
+    align-self: stretch;
+
     border: none;
     border-bottom: 1px solid #FFF;
 
     background-color: transparent;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
     color: #F6EDE9;
+}
+
+.leave-request-input:not(:last-child) {
+    margin-bottom: 35px;
 }
 
 .leave-request-input::placeholder {
@@ -606,6 +636,10 @@ body {
 
 .leave-request-send-button {
     border: none;
+}
+
+.leave-request-send-button {
+    padding: 25px 66px;
 }
 
 /* / Leave request */
