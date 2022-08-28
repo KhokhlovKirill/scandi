@@ -66,6 +66,10 @@ body {
 /* / Common styles */
 
 /* Header */
+.header {
+    background-image: url("../images/header-background.jpg");
+}
+
 .logo {
     text-transform: uppercase;
     font-style: normal;
