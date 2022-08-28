@@ -48,6 +48,11 @@ ul, ol {
     padding: 0;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Montserrat, sans-serif;
     background-color: #E5E5E5;
@@ -73,8 +78,19 @@ body {
     color: #533738;
 }
 
+.visually-hidden {
+    display: none;
+}
+
 .container {
     max-width: 1065px;
+
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-large {
+    max-width: 1200px;
 
     margin: 0 auto;
     padding: 0 15px;
@@ -269,7 +285,65 @@ body {
 /* / About Us */
 
 /* Portfolio */
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-h2 {
+    align-self: flex-start;
+
+    margin-top: 65px;
+    margin-bottom: 40px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+
+    margin-bottom: 40px;
+}
+
+.portfolio-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 451px;
+
+    padding: 0 35px;
+}
+
+.portfolio-list-item1 {
+    width: 458px;
+
+    background-image: url("../images/portfolio/1st-flat.jpg");
+}
+
+.portfolio-list-item2 {
+    width: 692px;
+
+    background-image: url("../images/portfolio/2nd-flat.jpg");
+}
+
+.portfolio-list-item3 {
+    width: 692px;
+
+    background-image: url("../images/portfolio/3rd-flat.jpg");
+}
+
+.portfolio-list-item4 {
+    width: 458px;
+
+    background-image: url("../images/portfolio/4th-flat.jpg");
+}
+
 .portfolio-list-item-name {
+    margin-bottom: 25px;
+
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
@@ -288,6 +362,10 @@ body {
 }
 
 .portfolio-link {
+    align-self: center;
+
+    margin-bottom: 65px;
+
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
