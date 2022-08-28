@@ -28,6 +28,9 @@
 /* Common styles */
 * {
     box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -70,7 +73,20 @@ body {
     background-image: url("../images/header-background.jpg");
 }
 
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1200px;
+    margin: 0 auto 91px auto;
+    padding-top: 36px;
+}
+
 .logo {
+    display: flex;
+    align-items: center;
+
     text-transform: uppercase;
     font-style: normal;
     font-weight: 400;
@@ -80,6 +96,16 @@ body {
     color: #533738;
 }
 
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-list {
+    display: flex;
+    justify-content: space-between;
+}
+
 .header-nav-list-item__link {
     font-style: normal;
     font-weight: 400;
@@ -87,6 +113,10 @@ body {
     line-height: 20px;
 
     color: #533738;
+}
+
+.header-nav-list-item:not(:last-child) {
+    margin-right: 26px;
 }
 
 .header-tel {
