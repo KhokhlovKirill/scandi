@@ -490,9 +490,31 @@ body {
 /* / How we work */
 
 /* Feedback */
+.feedback {
+    margin-bottom: 65px;
+}
+
+.feedback-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback-h2 {
+    margin-top: 65px;
+    margin-bottom: 40px;
+}
+
+.feedback-slider {
+    display: flex;
+    align-items: center;
+}
+
 .feedback-slider-button {
     width: 72px;
     height: 72px;
+
+    cursor: pointer;
 
     border: none;
     border-radius: 50%;
@@ -507,7 +529,18 @@ body {
     transform: rotate(180deg);
 }
 
+.feedback-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+
+    padding: 0 30px;
+}
+
 .feedback-text {
+    width: 407px;
+
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -524,6 +557,10 @@ body {
     line-height: 30px;
 
     color: #533738;
+}
+
+.feedback-images-block {
+    width: 407px;
 }
 
 /* / Feedback */
