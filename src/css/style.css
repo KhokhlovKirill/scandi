@@ -285,6 +285,10 @@ body {
 /* / About Us */
 
 /* Portfolio */
+.portfolio {
+    padding-bottom: 65px;
+}
+
 .portfolio-container {
     display: flex;
     flex-direction: column;
@@ -364,8 +368,6 @@ body {
 .portfolio-link {
     align-self: center;
 
-    margin-bottom: 65px;
-
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
@@ -389,6 +391,25 @@ body {
 /* Team */
 .team {
     background-color: #E2C4BA;
+
+    padding-bottom: 35px;
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-h2 {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.team-members-list {
+    display: grid;
+    column-gap: 38px;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .team-members-list-item-description {
@@ -400,14 +421,48 @@ body {
     color: #533738;
 }
 
+.team-members-list-item-image {
+    margin-bottom: 10px;
+}
+
 /* / Team */
 
 /* How we work */
 .how-we-work {
     background-color: #E2C4BA;
+
+    padding-bottom: 80px;
 }
 
-.how-we-work-list-item-number {
+.how-we-work-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.how-we-work-h2 {
+    margin-bottom: 40px;
+}
+
+.how-we-work-list {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.how-we-work-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.how-we-work-list-item-number-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+
     width: 70px;
     height: 70px;
 
