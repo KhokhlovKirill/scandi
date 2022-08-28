@@ -645,7 +645,23 @@ body {
 /* / Leave request */
 
 /* Footer */
+.footer {
+    padding: 37px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: flex-start;
+}
+
 .footer-contact-tel {
+    margin-right: 42px;
+
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
