@@ -33,12 +33,19 @@
     padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
 }
 
 ul, ol {
     list-style-type: none;
+
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -64,6 +71,12 @@ body {
     line-height: 50px;
 
     color: #533738;
+}
+
+.container {
+    width: 1035px;
+
+    margin: 0 auto;
 }
 
 /* / Common styles */
@@ -131,7 +144,17 @@ body {
 /* / Header */
 
 /* Promo */
+.promo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .promo-h1 {
+    max-width: 534px;
+
+    margin-bottom: 24px;
+
     font-style: normal;
     font-weight: 400;
     font-size: 50px;
@@ -141,6 +164,8 @@ body {
 }
 
 .promo-description {
+    margin-bottom: 21px;
+
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -149,6 +174,10 @@ body {
     color: #533738;
 }
 
+.promo-button {
+    margin-bottom: 168px;
+    padding: 25px 66px;
+}
 /* / Promo */
 
 /* About Us */
