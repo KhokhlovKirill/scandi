@@ -74,9 +74,10 @@ body {
 }
 
 .container {
-    width: 1035px;
+    max-width: 1065px;
 
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* / Common styles */
@@ -178,10 +179,38 @@ body {
     margin-bottom: 168px;
     padding: 25px 66px;
 }
+
 /* / Promo */
 
 /* About Us */
+.about-us-container {
+    display: grid;
+    column-gap: 63px;
+    grid-template-columns: 445px 1fr;
+    grid-template-areas:
+    "heading heading"
+    "image description";
+
+    margin-bottom: 21px;
+}
+
+.about-us-h2 {
+    grid-area: heading;
+    justify-self: center;
+
+    margin-top: 65px;
+    margin-bottom: 40px;
+}
+
+.about-us-image {
+    grid-area: image;
+}
+
 .about-us-description {
+    grid-area: description;
+}
+
+.about-us-description-paragraph {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -190,11 +219,28 @@ body {
     color: #533738;
 }
 
+.about-us-description-paragraph q {
+    quotes: none;
+}
+
 .about-us-achievements {
     background-color: #8D7370;
+
+    padding: 83px 0;
+}
+
+.about-us-achievements-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .about-us-achievements-list-item {
+    justify-self: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     text-transform: uppercase;
     font-style: normal;
     font-weight: 500;
@@ -204,10 +250,20 @@ body {
     color: #FFF;
 }
 
+.about-us-achievements-list-item:first-child {
+    justify-self: start;
+}
+
+.about-us-achievements-list-item:last-child {
+    justify-self: end;
+}
+
 .about-us-achievements-list-item-bigger-text {
     font-weight: 400;
     font-size: 50px;
     line-height: 62px;
+
+    margin-bottom: 8px;
 }
 
 /* / About Us */
