@@ -541,6 +541,8 @@ body {
 .feedback-text {
     width: 407px;
 
+    margin-bottom: 19px;
+
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
