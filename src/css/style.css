@@ -64,8 +64,21 @@ body {
     font-size: 20px;
     line-height: 24px;
 
+    cursor: pointer;
+
     color: #533738;
     background-color: #CC8B86;
+
+    transition: 200ms;
+}
+
+
+.button:hover {
+    transform: scale(105%);
+}
+
+.button:active {
+    background-color: #ac7672;
 }
 
 .h2 {
@@ -143,6 +156,12 @@ body {
     line-height: 20px;
 
     color: #533738;
+
+    transition: color 200ms;
+}
+
+.header-nav-list-item__link:hover {
+    color: #000;
 }
 
 .header-nav-list-item:not(:last-child) {
@@ -156,6 +175,12 @@ body {
     line-height: 20px;
 
     color: #533738;
+
+    transition: color 200ms;
+}
+
+.header-tel:hover {
+    color: #000;
 }
 
 /* / Header */
@@ -264,6 +289,12 @@ body {
     line-height: 37px;
 
     color: #FFF;
+
+    transition: 200ms;
+}
+
+.about-us-achievements-list-item:hover {
+    transform: translateY(-20px);
 }
 
 .about-us-achievements-list-item:first-child {
@@ -374,6 +405,12 @@ body {
     line-height: 37px;
 
     color: #533738;
+
+    transition: 200ms;
+}
+
+.portfolio-link:hover {
+    color: #000;
 }
 
 .portfolio-link::after {
@@ -410,6 +447,14 @@ body {
     display: grid;
     column-gap: 38px;
     grid-template-columns: repeat(3, 1fr);
+}
+
+.team-members-list-item {
+    transition: 200ms;
+}
+
+.team-members-list-item:hover {
+    transform: translateY(-25px);
 }
 
 .team-members-list-item-description {
@@ -454,6 +499,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    transition: 200ms;
+}
+
+.how-we-work-list-item:hover {
+    transform: translateY(-20px);
 }
 
 .how-we-work-list-item-number-block {
@@ -523,6 +574,12 @@ body {
     background-image: url("../images/arrow-feedback-slider.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    transition: 200ms;
+}
+
+.feedback-slider-button:active {
+    background-color: #ac7672;
 }
 
 .feedback-slider-right-button {
@@ -670,6 +727,12 @@ body {
     line-height: 30px;
 
     color: #533738;
+
+    transition: 200ms;
+}
+
+.footer-contact-tel:hover {
+    color: #000;
 }
 
 .footer-contact-address {
