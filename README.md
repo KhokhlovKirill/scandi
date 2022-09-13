@@ -1,5 +1,5 @@
 # Scandi - site layout
 
-Site: https://khokhlov.tk/portfolio/scandi
+Site: https://kirill.pw/portfolio/scandi
 
 
